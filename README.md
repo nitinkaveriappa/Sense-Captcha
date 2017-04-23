@@ -5,6 +5,13 @@
 Sense-Captcha is a free service that protects your website from spam and abuse.
 
 ------------------------------
+### `Audience`
+
+This documentation is designed for people familiar with HTML forms and server-side processing. To use Sense-Captcha, you will probably need to edit some code.
+
+We hope you find this documentation easy to follow.
+
+------------------------------
 ### `Adding Sense-Captcha to your site`
 
 **Client-Side**
