@@ -16,9 +16,32 @@ We hope you find this documentation easy to follow.
 
 **Client-Side**
 
+The easiest method for using the Sense-Captcha widget on your webpage is to include the necessary JavaScript resource and a sense-captcha tag. The sense-captcha tag is a DIV element with class name 'sense-captcha':
+
+```html
+<html>
+  <head>
+    <title>Sense-Captcha demo: Simple page</title>
+     <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <!-- Form attributes -->
+      <input type="submit" value="Submit">
+      <div id="sense-captcha"></div>
+    </form>
+  </body>
+</html>
+```
+
 Paste this snippet before the closing `</head>` tag on your HTML template:
 ```html
 <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
+```
+
+Paste this snippet before the end of your `</form>` tag preferably after the buttons on your HTML template:
+```html
+<div id="sense-captcha"></div>
 ```
 
 **Server-Side**
