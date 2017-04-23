@@ -39,10 +39,8 @@ $idle = time() - $_SESSION['created'];
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/error.js"></script>
 	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
-	<script src='https://nitinkaveriappa.pro/SenseCaptcha/js/jquery-3.1.1.min.js'></script>
 
   <script>
     window.onload = function() {
