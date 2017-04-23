@@ -43,7 +43,7 @@ $idle = time() - $_SESSION['created'];
 	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/error.js"></script>
 	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
 	<script src='https://nitinkaveriappa.pro/SenseCaptcha/js/jquery-3.1.1.min.js'></script>
-	
+
   <script>
     window.onload = function() {
       errCheck()	};
@@ -53,7 +53,7 @@ $idle = time() - $_SESSION['created'];
   </head>
 
   <body>
-  		
+
     <div class="container">
       <form class="form-signin" action="submit_data.php" method="POST">
         <span id="errmsg" style="color:#F03"> </span><br/>
@@ -71,7 +71,7 @@ $idle = time() - $_SESSION['created'];
         <button class="btn btn-lg btn-primary btn-block" type="submit" id='submit' onClick="return validate();">Submit</button>
         <button class="btn btn-lg btn-primary btn-block" type="reset">Reset</button>
         <center>
-        <div id="sense-banner">
+        <div id="sense-captcha">
         		<div id="sense-result"></div>
         		<img src="images/banner.svg" height="35px" width="200px">
                 <div id="errorBox" class="error-Box">
@@ -114,8 +114,8 @@ $idle = time() - $_SESSION['created'];
     <p>&copy; Nitin Kaveriappa &amp; Paurav Surendra</p>
 	</center>
     </div> <!-- /container -->
-	 
-	
+
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
   </body>
