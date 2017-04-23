@@ -22,7 +22,7 @@ The easiest method for using the Sense-Captcha widget on your webpage is to incl
 <html>
   <head>
     <title>Sense-Captcha demo: Simple page</title>
-     <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
+     <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
   </head>
   <body>
     <form action="?" method="POST">
