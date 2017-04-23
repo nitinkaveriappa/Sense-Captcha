@@ -1,4 +1,5 @@
-# Sense-Captcha
+# Sense-Captcha 
+<img src="https://nitinkaveriappa.pro/SenseCaptcha/images/logo.svg" alt="Sense-Captcha Logo"  width="318" weight="67" />
 
 #### A UI friendly Captcha implementation for forms security.
 Sense-Captcha is a free service that protects your website from spam and abuse.
@@ -15,11 +16,11 @@ Paste this snippet before the closing `</head>` tag on your HTML template:
 
 **Server-Side**
 
-When your users submit the form where you integrated Sense-Captcha, you'll get as part of the payload a string with the name "Sense-result". In order to check whether Sense-Captcha has verified that user, send a POST request with these parameters:
+When your users submit the form where you integrated Sense-Captcha, you'll get as part of the payload a string with the name "Sense-result". In order to check whether Sense-Captcha has verified that user, send a request with these parameters:
 
 URL: https://nitinkaveriappa.pro/SenseCaptcha/result/$sense-result$
 
-POST Parameter | Description
+Parameter | Description
 ----|---------
 $sense-result$ |	Required. The user response token provided by Sense-Captcha, verifying the user on your site.
 
@@ -39,9 +40,11 @@ $success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$res
 if($success=="true")
 {
   //All OK!!! Not a BOT!
+  //Do whatever...
 }
 else
 {
   //Danger!!! It's a BOT!
+  //Do whatever...
 }
 ```
