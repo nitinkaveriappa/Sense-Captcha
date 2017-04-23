@@ -38,20 +38,21 @@ $idle = time() - $_SESSION['created'];
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/error.js"></script>
-	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/error.js"></script>
+	<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
+	<script src='https://nitinkaveriappa.pro/SenseCaptcha/js/jquery-3.1.1.min.js'></script>
+	
   <script>
     window.onload = function() {
       errCheck()	};
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
 
   </head>
 
   <body>
-
+  		
     <div class="container">
       <form class="form-signin" action="submit_data.php" method="POST">
         <span id="errmsg" style="color:#F03"> </span><br/>
@@ -66,16 +67,11 @@ $idle = time() - $_SESSION['created'];
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="Password" id="inputPassword" class="form-control" placeholder="Password" required><br/>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit" id='submit' onClick="return validate();">Submit</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id='submit' >Submit</button>
         <button class="btn btn-lg btn-primary btn-block" type="reset">Reset</button>
         <center>
         <div id="sense-captcha">
-        		<div id="sense-result"></div>
-        		<img src="images/banner.svg" height="35px" width="200px">
-                <div id="errorBox" class="error-Box">
-					<div id="errorMsg" class="error-msg">
-                    </div>
-				</div>
+        		
         </div>
         </center>
       </form>
@@ -112,8 +108,8 @@ $idle = time() - $_SESSION['created'];
     <p>&copy; Nitin Kaveriappa &amp; Paurav Surendra</p>
 	</center>
     </div> <!-- /container -->
-
-
+	 
+	
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
   </body>
