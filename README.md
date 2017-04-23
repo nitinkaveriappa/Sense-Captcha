@@ -36,7 +36,7 @@ The easiest method for using the Sense-Captcha widget on your webpage is to incl
 
 Paste this snippet before the closing `</head>` tag on your HTML template:
 ```html
-<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_3_0.js"></script>
+<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
 ```
 
 Paste this snippet before the end of your `</form>` tag preferably after the buttons on your HTML template:
@@ -59,14 +59,14 @@ $sense-result$ |	Required. The user response token provided by Sense-Captcha, ve
 ```php
 if(isset($_POST['Sense-result']))
 {
-  $result = $_POST['Sense-result'];
+  $sense-result = $_POST['Sense-result'];
 }
 else
 {
   header("Location:index.php?type=bot");
 }
 
-$success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$result");
+$success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$sense-result");
 if($success=="true")
 {
   //All OK!!! Not a BOT!
