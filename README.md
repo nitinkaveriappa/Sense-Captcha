@@ -16,13 +16,14 @@ We hope you find this documentation easy to follow.
 
 **Client-Side**
 
-The easiest method for using the Sense-Captcha widget on your webpage is to include the necessary JavaScript resource and a sense-captcha tag. The sense-captcha tag is a DIV element with class name 'sense-captcha':
+The easiest method for using the Sense-Captcha widget on your webpage is to include the necessary JavaScript and StyleSheet resources and a sense-captcha tag. The sense-captcha tag is a DIV element with class name 'sense-captcha':
 
 ```html
 <html>
   <head>
     <title>Sense-Captcha demo: Simple page</title>
      <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
+     <link href="https://nitinkaveriappa.pro/SenseCaptcha/css/style.css" rel="stylesheet">
   </head>
   <body>
     <form action="?" method="POST">
@@ -37,6 +38,8 @@ The easiest method for using the Sense-Captcha widget on your webpage is to incl
 Paste this snippet before the closing `</head>` tag on your HTML template:
 ```html
 <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
+<link href="https://nitinkaveriappa.pro/SenseCaptcha/css/style.css" rel="stylesheet">
+
 ```
 
 Paste this snippet before the end of your `</form>` tag preferably after the buttons on your HTML template:
@@ -48,25 +51,25 @@ Paste this snippet before the end of your `</form>` tag preferably after the but
 
 When your users submit the form where you integrated Sense-Captcha, you'll get as part of the payload a string with the name "Sense-result". In order to check whether Sense-Captcha has verified that user, send a request with these parameters:
 
-URL: https://nitinkaveriappa.pro/SenseCaptcha/result/$sense-result$
+URL: https://nitinkaveriappa.pro/SenseCaptcha/result/$sense_result$
 
 Parameter | Description
 ----|---------
-$sense-result$ |	Required. The user response token provided by Sense-Captcha, verifying the user on your site.
+$sense_result$ |	Required. The user response token provided by Sense-Captcha, verifying the user on your site.
 
 #### Simple PHP Example
 
 ```php
 if(isset($_POST['Sense-result']))
 {
-  $sense-result = $_POST['Sense-result'];
+  $sense_result = $_POST['Sense-result'];
 }
 else
 {
   header("Location:index.php?type=bot");
 }
 
-$success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$sense-result");
+$success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$sense_result");
 if($success=="true")
 {
   //All OK!!! Not a BOT!
