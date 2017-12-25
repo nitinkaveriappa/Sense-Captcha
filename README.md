@@ -22,8 +22,8 @@ The easiest method for using the Sense-Captcha widget on your webpage is to incl
 <html>
   <head>
     <title>Sense-Captcha demo: Simple page</title>
-     <script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
-     <link href="https://nitinkaveriappa.pro/SenseCaptcha/css/style.css" rel="stylesheet">
+     <script src="https://nitinkaveriappa.com/SenseCaptcha/js/sense_captcha.js"></script>
+     <link href="https://nitinkaveriappa.com/SenseCaptcha/css/style.css" rel="stylesheet">
   </head>
   <body>
     <form action="?" method="POST">
@@ -37,8 +37,8 @@ The easiest method for using the Sense-Captcha widget on your webpage is to incl
 
 Paste this snippet before the closing `</head>` tag on your HTML template:
 ```html
-<script src="https://nitinkaveriappa.pro/SenseCaptcha/js/sense_captcha.js"></script>
-<link href="https://nitinkaveriappa.pro/SenseCaptcha/css/style.css" rel="stylesheet">
+<script src="https://nitinkaveriappa.com/SenseCaptcha/js/sense_captcha.js"></script>
+<link href="https://nitinkaveriappa.com/SenseCaptcha/css/style.css" rel="stylesheet">
 
 ```
 
@@ -51,7 +51,7 @@ Paste this snippet before the end of your `</form>` tag preferably after the but
 
 When your users submit the form where you integrated Sense-Captcha, you'll get as part of the payload a string with the name "Sense-result". In order to check whether Sense-Captcha has verified that user, send a request with these parameters:
 
-URL: https://nitinkaveriappa.pro/SenseCaptcha/result/$sense_result$
+URL: https://nitinkaveriappa.com/SenseCaptcha/result/$sense_result$
 
 Parameter | Description
 ----|---------
@@ -69,7 +69,7 @@ else
   header("Location:index.php?type=bot");
 }
 
-$success=file_get_contents("https://nitinkaveriappa.pro/SenseCaptcha/result/$sense_result");
+$success=file_get_contents("https://nitinkaveriappa.com/SenseCaptcha/result/$sense_result");
 if($success=="true")
 {
   //All OK!!! Not a BOT!
