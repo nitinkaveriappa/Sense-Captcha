@@ -1,5 +1,5 @@
 # Sense-Captcha 
-<img src="https://nitinkaveriappa.pro/SenseCaptcha/images/logo.svg" alt="Sense-Captcha Logo"  width="318" weight="67" />
+<img src="https://nitinkaveriappa.com/SenseCaptcha/images/logo.svg" alt="Sense-Captcha Logo"  width="318" weight="67" />
 
 #### A UI friendly Captcha implementation for forms security.
 Sense-Captcha is a free service that protects your website from spam and abuse.
