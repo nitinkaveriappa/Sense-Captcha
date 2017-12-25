@@ -16,7 +16,7 @@ We hope you find this documentation easy to follow.
 
 **Client-Side**
 
-The easiest method for using the Sense-Captcha widget on your webpage is to include the necessary JavaScript and StyleSheet resources and a sense-captcha tag. The sense-captcha tag is a DIV element with class name 'sense-captcha':
+The easiest method for using the Sense-Captcha widget on your webpage is to include the necessary JavaScript and StyleSheet resources and a sense-captcha tag. The sense-captcha tag is a DIV element with the id 'sense-captcha':
 
 ```html
 <html>
